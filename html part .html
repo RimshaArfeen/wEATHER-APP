@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForecastFinder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css part.css">
+  
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Forecast F!nder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar" id="navbarColor01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="bg_img"></div>
+  <div class="quote">"Celebrating every weather, from gentle drizzles to fierce storms, as nature's symphony in motion."
+  </div>
+  <!-- <div class="color" style="width: 100px ; height: 100px;">vbn</div> -->
+  <div class="container-lg-12">
+    <div class="card mt-1 border-0">
+      <div class="row g-0">
+        <div class="col-md-4"
+          style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+          <i class="weather_img "></i>
+          <div class="weather_name"></div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <form class="form-inline form-navbar my-2 my-lg-0 " action="#"
+              style="display: flex; justify-content: center">
+              <input class="form-control" name="s" type="text" placeholder="Search"
+                style="width: 300px; height: 40px; margin-left: 30px; padding: 10px;">
+              <button class="btn">
+                <i class="ri-search-line"></i>
+              </button>
+            </form>
+            <div class="main">
+              <h1 class="temp"></h1>
+              <h3 class="city">/</h3><span class="country"></span>
+            </div>
+            <div class="details">
+              <div class="left">
+                <div class="col">
+                  <i class="ri-water-percent-fill icons"></i>
+                  <span class="humidity"></span>
+                </div>
+                <div>Humidity</div>
+              </div>
+              <div class="right">
+                <div class="col">
+                  <i class="ri-windy-line icons"></i>
+                  <span class="wind"></span>
+                </div>
+                <div>Wind speed</div>
+              </div>
+            </div>
+            <div class="info">
+              <div class="col-sm-4">RealFeel
+                <span class="feels_like">®28°</span>
+              </div>
+              <div class="col-sm-4">Pressure
+                <span class="Pressure">101mb</span>
+              </div>
+              <div class="col-sm-4">Visibility
+                <span class="Visibility">6km</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2024 ForecastFinder.com All rights reserved.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
